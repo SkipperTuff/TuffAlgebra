@@ -5,7 +5,7 @@ primary_region = "ams"
 auto_start_machines = true
 auto_stop_machines = false
 force_https = true
-internal_port = 8_080
+internal_port = 5_080
 min_machines_running = 1
 
 [[vm]]
