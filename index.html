@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Classroom</title>
+
+<link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+
+<style>
+#bgCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background: #060606;
+}
+</style>
+
+</head>
+
+<body>
+
+<canvas id="bgCanvas"></canvas>
+
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="Settings.html">Settings</a>
+  <a href="Movies.html">Movies</a>
+  <a href="Proxy.html">Proxy</a>
+</div>
+
+<nav>
+  <img src="images/logo.png">
+  <h1 style="color:#ffffff;">Tuff Unblocked Games 😛</h1>
+</nav>
+
+<div class="content">
+
+<hr>
+
+<div class="search">
+  <input type="text" placeholder="Search...">
+  <button><i class="fas fa-search"></i></button>
+</div>
+
+<div id="games">
+
+  <div class="game-card" data-name="google form">
+    <button class="fav-btn">★</button>
+    <a href="https://forms.gle/Mn7jnVDfzQjPCvfi6" target="_blank">
+      <img src="images/googleforums.webp" alt="google form">
+    </a>
+  </div>
+
+  <div class="game-card" data-name="bob the robber 2">
+    <button class="fav-btn">★</button>
+    <a href="games/bob-the-robber-2/"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
+  </div>
+
+  <div class="game-card" data-name="vex 7">
+    <button class="fav-btn">★</button>
+    <a href="games/vex7/"><img src="images/vex7.jpeg" alt="vex 7"></a>
+  </div>
+
+  <div class="game-card" data-name="vex 6">
+    <button class="fav-btn">★</button>
+    <a href="games/vex6/"><img src="images/vex6.jpeg" alt="vex 6"></a>
+  </div>
+
+  <div class="game-card" data-name="minecraft">
+    <button class="fav-btn">★</button>
+    <a href="games/"><img src="images/mc.png" alt="minecraft"></a>
+  </div>
+
+  <div class="game-card" data-name="moto x3m">
+    <button class="fav-btn">★</button>
+    <a href="games/moto-x3m/"><img src="images/moto-x3m.jpg" alt="moto x3m"></a>
+  </div>
+
+  <div class="game-card" data-name="retro bowl">
+    <button class="fav-btn">★</button>
+    <a href="games/retro-bowl/"><img src="images/retro-bowl.jpg" alt="retrobowl"></a>
+  </div>
+
+  <div class="game-card" data-name="drive mad">
+    <button class="fav-btn">★</button>
+    <a href="games/drive-mad/"><img src="images/drive-mad.jpg" alt="drive mad"></a>
+  </div>
+
+  <div class="game-card" data-name="slope">
+    <button class="fav-btn">★</button>
+    <a href="games/slope/"><img src="images/slope.jpg" alt="slope"></a>
+  </div>
+
+  <div class="game-card" data-name="moto x3m 2">
+    <button class="fav-btn">★</button>
+    <a href="games/motox3m2/"><img src="images/motox3m2.jpg" alt="moto x3m2"></a>
+  </div>
+
+  <div class="game-card" data-name="1v1 lol">
+    <button class="fav-btn">★</button>
+    <a href="games/1v1lol/"><img src="images/1v1.lol.png" alt="1v1.lol"></a>
+  </div>
+
+  <div class="game-card" data-name="zombocalypse">
+    <button class="fav-btn">★</button>
+    <a href="games/zombocalypse/"><img src="games/zombocalypse/zombo.webp" alt="zombocalypse"></a>
+  </div>
+
+  <div class="game-card" data-name="achievement unlocked">
+    <button class="fav-btn">★</button>
+    <a href="games/achievementunlocked/"><img src="images/Achievement.webp" alt="achievement unlocked"></a>
+  </div>
+
+  <div class="game-card" data-name="2048">
+    <button class="fav-btn">★</button>
+    <a href="games/2048/"><img src="games/2048/2048.png" alt="2048"></a>
+  </div>
+
+  <div class="game-card" data-name="wolf 3d">
+    <button class="fav-btn">★</button>
+    <a href="games/wolf3d"><img src="images/Wolf3d.webp" alt="wolf 3d"></a>
+  </div>
+
+  <div class="game-card" data-name="among us">
+    <button class="fav-btn">★</button>
+    <a href="games/among-us/"><img src="games/among-us/red.png" alt="among us"></a>
+  </div>
+
+  <div class="game-card" data-name="xx142 b2exe">
+    <button class="fav-btn">★</button>
+    <a href="games/xx142-b2exe/"><img src="games/xx142-b2exe/splash.png" alt="xx142-b2exe"></a>
+  </div>
+
+  <div class="game-card" data-name="yoshi fabrication">
+    <button class="fav-btn">★</button>
+    <a href="games/yoshifabrication/"><img src="images/Yoshi.webp" alt="Yoshi Fabrication"></a>
+  </div>
+
+  <div class="game-card" data-name="worlds hardest game">
+    <button class="fav-btn">★</button>
+    <a href="games/worlds-hardest-game/"><img src="images/WHG.webp" alt="Worlds Hardest Game"></a>
+  </div>
+
+  <div class="game-card" data-name="worlds hardest game 2">
+    <button class="fav-btn">★</button>
+    <a href="games/worlds-hardest-game-2/"><img src="images/WHG2.webp" alt="Worlds Hardest Game 2"></a>
+  </div>
+
+  <div class="game-card" data-name="x trial racing">
+    <button class="fav-btn">★</button>
+    <a href="games/x-trial-racing"><img src="games/x-trial-racing/icon-256.png" alt="X trial racing"></a>
+  </div>
+
+  <div class="game-card" data-name="wordle">
+    <button class="fav-btn">★</button>
+    <a href="games/wordle"><img src="games/wordle/img/logo_512x512.png" alt="Wordle"></a>
+  </div>
+
+  <div class="game-card" data-name="angry birds">
+    <button class="fav-btn">★</button>
+    <a href="games/angry-birds"><img src="images/angrybirds00.webp" alt="Angry Birds"></a>
+  </div>
+
+  <div class="game-card" data-name="rocket goal">
+    <button class="fav-btn">★</button>
+    <a href="https://script.google.com/macros/s/AKfycbybZkVPGyvHUOZbwrJSn5fRQIFcGpoIEhp0r-yq2GWRtE_1G7YzP4t8kPZRfp6tutUN/exec">
+      <img src="images/rocket.webp" alt="Rocket Goal io">
+    </a>
+  </div>
+
+  <div class="game-card" data-name="anti terrorist rush">
+    <button class="fav-btn">★</button>
+    <a href="games/anti-terrorist-rush"><img src="games/anti-terrorist-rush/icon.png" alt="Anti Terrorist Rush"></a>
+  </div>
+
+  <div class="game-card" data-name="align 4">
+    <button class="fav-btn">★</button>
+    <a href="games/align-4"><img src="games/align-4/img/board.png" alt="Align 4"></a>
+  </div>
+
+  <div class="game-card" data-name="alien hominid">
+    <button class="fav-btn">★</button>
+    <a href="games/alienhominid"><img src="games/alienhominid/alienhominid.jpeg" alt="Alien Hominid"></a>
+  </div>
+
+  <div class="game-card" data-name="age of war">
+    <button class="fav-btn">★</button>
+    <a href="games/age-of-war"><img src="games/age-of-war/icon.jpg" alt="age of war"></a>
+  </div>
+
+  <div class="game-card" data-name="adrenaline challenge">
+    <button class="fav-btn">★</button>
+    <a href="games/adrenalinechallenge"><img src="games/adrenalinechallenge/adrenalinechallenge.jpg" alt="adrenaline challenge"></a>
+  </div>
+
+  <div class="game-card" data-name="a dark room">
+    <button class="fav-btn">★</button>
+    <a href="games/adarkroom"><img src="games/adarkroom/splash.png" alt="a dark room"></a>
+  </div>
+
+  <div class="game-card" data-name="9007199254740992">
+    <button class="fav-btn">★</button>
+    <a href="games/9007199254740992"><img src="games/9007199254740992/logo-4.png" alt="9007199254740992"></a>
+  </div>
+
+  <div class="game-card" data-name="2020 game">
+    <button class="fav-btn">★</button>
+    <a href="games/2020-game"><img src="games/2020-game/icon.jpeg" alt="2020 game"></a>
+  </div>
+
+  <div class="game-card" data-name="100ng">
+    <button class="fav-btn">★</button>
+    <a href="games/100ng"><img src="games/100ng/100ng-logo.png" alt="100ng"></a>
+  </div>
+
+  <div class="game-card" data-name="10 minutes till dawn">
+    <button class="fav-btn">★</button>
+    <a href="games/10-minutes-till-dawn"><img src="games/10-minutes-till-dawn/splash.png" alt="10 minutes till dawn"></a>
+  </div>
+
+  <div class="game-card" data-name="8ball billiards">
+    <button class="fav-btn">★</button>
+    <a href="games/8ball-billards-classic"><img src="games/8ball-billards-classic/icon.png" alt="8ball"></a>
+  </div>
+
+  <div class="game-card" data-name="1v1 space">
+    <button class="fav-btn">★</button>
+    <a href="games/1v1space"><img src="games/1v1space/splash.png" alt="1v1space"></a>
+  </div>
+
+  <div class="game-card" data-name="krunker">
+    <button class="fav-btn">★</button>
+    <a href="https://krunker.io/"><img src="images/krunker-io-game-ft.webp" alt="krunker io"></a>
+  </div>
+
+  <div class="game-card" data-name="bitlife">
+    <button class="fav-btn">★</button>
+    <a href="https://script.google.com/macros/s/AKfycbz7YQScNBizgtxyn4DO7v12IQTI4nqwQc8srdlN30uZWw5BxWdIr2TPoMRC_8yQQKC7/exec">
+      <img src="images/Bitlife.png" alt="Bitlife">
+    </a>
+  </div>
+
+</div>
+</div>
+
+<script>
+window.addEventListener("load", () => {
+
+  /* OPEN GAMES */
+  document.querySelectorAll("#games a").forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      window.open(link.href, "_blank");
+    });
+  });
+
+  /* SETTINGS */
+  function particlesEnabled() {
+    const p = localStorage.getItem("particles");
+    return p === null || p === "true";
+  }
+
+  /* SEARCH */
+  const input = document.querySelector('.search input');
+  const cards = document.querySelectorAll('#games .game-card');
+
+  if (input) {
+    input.addEventListener('input', () => {
+      const searchTerm = input.value.toLowerCase();
+      cards.forEach(card => {
+        const name = card.dataset.name.toLowerCase();
+        card.style.display = name.includes(searchTerm) ? "" : "none";
+      });
+    });
+  }
+
+  /* FAVORITES */
+  let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+  document.querySelectorAll(".game-card").forEach(card => {
+    const name = card.dataset.name;
+    const btn = card.querySelector(".fav-btn");
+    if (btn && favorites.includes(name)) btn.classList.add("active");
+  });
+
+  document.querySelectorAll(".fav-btn").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const card = btn.closest(".game-card");
+      if (!card) return;
+      const name = card.dataset.name;
+      if (!name) return;
+
+      if (favorites.includes(name)) {
+        favorites = favorites.filter(f => f !== name);
+        btn.classList.remove("active");
+      } else {
+        favorites.push(name);
+        btn.classList.add("active");
+      }
+
+      localStorage.setItem("favorites", JSON.stringify(favorites));
+    });
+  });
+
+  /* PARTICLES */
+  const canvas = document.getElementById("bgCanvas");
+  const ctx = canvas.getContext("2d");
+
+  canvas.style.pointerEvents = "none";
+
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resize();
+
+  let particles = [];
+
+  function spawnParticles() {
+    particles = [];
+    for (let i = 0; i < 90; i++) {
+      particles.push({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        vx: (Math.random() - 0.5) * 0.7,
+        vy: (Math.random() - 0.5) * 0.7
+      });
+    }
+  }
+
+  spawnParticles();
+
+  /* MOUSE TRACKING */
+  let mouseX = -9999;
+  let mouseY = -9999;
+
+  window.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  window.addEventListener("mouseleave", () => {
+    mouseX = -9999;
+    mouseY = -9999;
+  });
+
+  /* ANIMATE */
+  let hue = 0;
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    hue = (hue + 0.15) % 360;
+
+    if (particlesEnabled()) {
+
+      particles.forEach(p => {
+
+        const dx = p.x - mouseX;
+        const dy = p.y - mouseY;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        const repelRadius = 100;
+
+        if (dist < repelRadius && dist > 0) {
+          const force = (repelRadius - dist) / repelRadius;
+          p.vx += (dx / dist) * force * 0.6;
+          p.vy += (dy / dist) * force * 0.6;
+        }
+
+        const speed = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
+        const maxSpeed = 3;
+        if (speed > maxSpeed) {
+          p.vx = (p.vx / speed) * maxSpeed;
+          p.vy = (p.vy / speed) * maxSpeed;
+        }
+
+        p.vx *= 0.999;
+        p.vy *= 0.999;
+
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+        ctx.fillStyle = `hsl(${hue}, 100%, 55%)`;
+        ctx.shadowColor = `hsl(${hue}, 100%, 55%)`;
+        ctx.shadowBlur = 8;
+        ctx.fillRect(p.x, p.y, 2, 2);
+      });
+
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          let dx = particles[i].x - particles[j].x;
+          let dy = particles[i].y - particles[j].y;
+          let dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < 120) {
+            ctx.strokeStyle = `hsla(${hue}, 100%, 55%, 0.25)`;
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+
+  window.addEventListener("resize", () => {
+    resize();
+    spawnParticles();
+  });
+
+});
+</script>
+
+</body>
+</html>

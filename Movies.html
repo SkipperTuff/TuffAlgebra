@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movies</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 10px;
+    }
+
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    #backBtn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    #backBtn:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    #subtitle {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #aaa;
+      max-width: 1100px;
+    }
+
+    .movies-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 105px);
+      gap: 4px;
+      width: 100%;
+      max-width: 1400px;
+      justify-content: center;
+    }
+
+    .movie-card {
+      background-color: #111;
+      border-radius: 4px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.15s;
+      text-align: center;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.03);
+    }
+
+    .movie-card img {
+      width: 100%;
+    }
+
+    .movie-card p {
+      padding: 3px;
+      font-size: 0.75em;
+    }
+
+    /* red side lines */
+    body::before, body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background-color: red;
+      z-index: 9999;
+    }
+
+    body::before { left: 0; }
+    body::after { right: 0; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a id="backBtn" href="#">Back</a>
+  <h1>Movies</h1>
+</header>
+
+<div id="subtitle">
+  Some movies may not work. If they don’t, try another Google account.
+</div>
+
+<div class="movies-container">
+
+  <div class="movie-card" data-url="https://drive.google.com/file/d/1SABVZNMwHTME4hsFwL9IWyWZPKDTBSoT/view?pli=1">
+    <img src="images\Inside-out2.png">
+    <p>Inside Out 2</p>
+  </div>
+
+  <div class="movie-card" data-url="https://drive.google.com/file/d/16Ze08q_XKmANPNYreDVZnEbZEZTSLwOa/view">
+    <img src="The-peanuts-movie.png">
+    <p>The Peanuts Movie</p>
+  </div>
+
+  <div class="movie-card" data-url="https://drive.google.com/file/d/1OsyF2LKJqjtv0b2Xd9GWOLcYkzny3VZo/view">
+    <img src="images\The-super-mariobros.png">
+    <p>Super Mario Bros</p>
+  </div>
+
+  <div class="movie-card" data-url="https://drive.google.com/file/d/1skhRapfCogch4oyEneABmNsqqphuTwRA/view">
+    <img src="images\Dexter-season1ep1.png">
+    <p>Dexter S01E01</p>
+  </div>
+
+  <div class="movie-card" data-url="https://drive.google.com/file/d/1RwsV5Yr8xjUDa5zmyDtWdMK7Cfb_G6Kw/view">
+    <img src="images\dexter-s1ep2.png">
+    <p>Dexter S01E02</p>
+  </div>
+
+</div>
+
+<script>
+function openBlank(url) {
+  const win = window.open("about:blank");
+
+  if (!win) {
+    alert("Allow popups!");
+    return;
+  }
+
+  win.document.write(`
+    <iframe src="${url}" style="width:100%;height:100%;border:none;"></iframe>
+  `);
+}
+
+/* movie clicks */
+document.querySelectorAll('.movie-card').forEach(card => {
+  card.onclick = () => {
+    openBlank(card.dataset.url);
+  };
+});
+
+/* back button */
+document.getElementById("backBtn").onclick = (e) => {
+  e.preventDefault();
+  if (history.length > 1) history.back();
+  else location.href = "index.html";
+};
+</script>
+
+</body>
+</html>
